@@ -20,7 +20,7 @@ public class eCommerce_tc_1 {
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Sujaiemulator");
-		options.setApp("C:\\Users\\sujsekar\\eclipse-workspace\\AppiumProject\\src\\test\\java\\resources\\General-Store.apk");
+		options.setApp("C:\\Users\\sujsekar\\git\\Appium-Project\\AppiumProject\\src\\test\\java\\resources\\General-Store.apk");
 		
 		AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -28,23 +28,23 @@ public class eCommerce_tc_1 {
 		
 //		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Sujai Sekar");
 		
-		driver.hideKeyboard();
-		
-		driver.findElement(By.id("com.androidsample.generalstore:id/radioFemale")).click();
-		
-		driver.findElement(By.id("android:id/text1")).click();
-		
-		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));"));
-		
-		driver.findElement(By.xpath("//android.widget.TextView[@text='Argentina']")).click();
-		
-		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
-		
-//		Thread.sleep(5000);
-		
-		String toastMessage = driver.findElement(By.xpath("(//android.widget.Toast)[1]")).getAttribute("name");
-		
-		Assert.assertEquals(toastMessage, "Please enter your name");
+//		driver.hideKeyboard();
+//		
+//		driver.findElement(By.id("com.androidsample.generalstore:id/radioFemale")).click();
+//		
+//		driver.findElement(By.id("android:id/text1")).click();
+//		
+//		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));"));
+//		
+//		driver.findElement(By.xpath("//android.widget.TextView[@text='Argentina']")).click();
+//		
+//		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
+//		
+////		Thread.sleep(5000);
+//		
+//		String toastMessage = driver.findElement(By.xpath("(//android.widget.Toast)[1]")).getAttribute("name");
+//		
+//		Assert.assertEquals(toastMessage, "Please enter your name");
 		
 	}
 

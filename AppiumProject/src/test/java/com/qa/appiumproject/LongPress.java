@@ -17,14 +17,14 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 
-public class LongPress {
+public class LongPress extends BaseClass{
 	
 	@Test
 	public void LongPressGesture() throws MalformedURLException, InterruptedException{
 		
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Sujaiemulator");
-		options.setApp("\\Users\\sujsekar\\eclipse-workspace\\AppiumProject\\src\\test\\java\\resources\\ApiDemos-debug.apk");
+		options.setApp("C:\\Users\\sujsekar\\git\\Appium-Project\\AppiumProject\\src\\test\\java\\resources\\ApiDemos-debug.apk");
 		
 		AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -48,6 +48,9 @@ public class LongPress {
 		String menuText = driver.findElement(By.id("android:id/title")).getText();
 		
 		Assert.assertEquals(menuText, "Sample menu");
+		
+		
+		
 		
 		
 		

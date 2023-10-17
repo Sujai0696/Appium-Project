@@ -24,8 +24,9 @@
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
-			<version>8.5.0</version>
+			<version>8.6.0</version>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
@@ -33,12 +34,29 @@
 			<artifactId>testng</artifactId>
 			<version>7.6.0</version>
 		</dependency>
+		
+		
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-support</artifactId>
 			<version>4.8.3</version>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.0.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.4.1</version>
 		</dependency>
 
 	</dependencies>
