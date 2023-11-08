@@ -14,7 +14,7 @@ public class BrowserBaseClass {
 	public static void configureAppium() throws MalformedURLException {
 		
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName("Browseremulator");
+		options.setDeviceName("Pixel2Emulator");
 		options.setChromedriverExecutable("C:\\Users\\sujsekar\\git\\Appium-Project\\AppiumProject\\Drivers\\chromedriver.exe");
 		options.setCapability("browserName", "Chrome");
 		 driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);

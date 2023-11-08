@@ -12,6 +12,7 @@ public class MobileBrowserTest extends BrowserBaseClass{
 	private void browseTest() throws MalformedURLException {
 		configureAppium();
 		driver.get("https://www.google.co.in/");
+		
 		System.out.println(driver.getTitle());
 		driver.findElement(By.name("q")).sendKeys("Sujai Sekar");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
